@@ -1,0 +1,39 @@
+Analisis (Metriks Pengujian)
+
+Topik      : Convolutional Neural Networks (CNN) and TensorFlow
+Judul      : PadiGuard: Pengenalan Penyakit pada Tanaman Padi dengan Convolutional Neural Networks (CNN) menggunakan TensorFlow
+Referensi  : https://www.sciencedirect.com/science/article/pii/S2589721723000284
+
+Dari keseluruhan proses runing program didapatkan klasifikasi gambar secara berturut - turut yakni :
+- loss 2.7896, accuracy 0.2461, val_loss 23.7627
+- loss 1.5936, accuracy 0.4271, val_loss 33.5581
+- loss 1.2918, accuracy 0.5519, val_loss 37.3374
+- loss 1.0606, accuracy 0.6297, val_loss 39.3353
+- loss 0.8375, accuracy 0.7230, val_loss 62.1318
+- loss 0.7045, accuracy 0.7756, val_loss 50.1501
+- loss 0.6138, accuracy 0.8008, val_loss 62.0143
+- loss 0.5012, accuracy 0.8436, val_loss 58.2701
+- loss 0.4303, accuracy 0.8597, val_loss 59.0411
+- loss 0.3246, accuracy 0.9004, val_loss 57.1716
+
+Kesimpulannya 
+Peningkatan Akurasi dan Penurunan Loss pada Data Latih:
+
+1.  Akurasi pada data latih meningkat dari epoch ke epoch, mencapai tingkat akurasi tertinggi pada epoch terakhir (sekitar 90.04%).
+Loss pada data latih mengalami penurunan secara bertahap, menunjukkan bahwa model semakin memahami pola pada dataset latih.
+Akurasi dan Loss pada Data Validasi (Validation Data):
+
+2.  Akurasi pada data validasi memiliki variasi, tetapi cenderung naik, mencapai akurasi tertinggi pada epoch ke-9 (sekitar 85.97%).
+Loss pada data validasi mengalami peningkatan, terutama setelah epoch ke-4, yang bisa mengindikasikan overfitting pada model terhadap dataset latih.
+Overfitting:
+
+3.  Overfitting terjadi ketika model memiliki kinerja yang baik pada dataset latih tetapi tidak pada dataset validasi. Ini dapat dilihat dari perbedaan yang cukup besar antara akurasi pada data latih dan data validasi pada beberapa epoch terakhir.
+Tingkat Akurasi Tinggi pada Data Validasi:
+
+4.  Akurasi pada data validasi mencapai tingkat yang cukup baik, tetapi perlu diperhatikan bahwa perbedaan antara akurasi pada data latih dan data validasi dapat menjadi pertanda adanya overfitting.
+Tingginya Loss pada Data Validasi:
+
+5.  Loss pada data validasi cenderung meningkat, yang dapat mengindikasikan bahwa model tidak umum dengan baik pada data baru yang tidak pernah dilihat selama pelatihan.
+Potensi Perluasan Pelatihan (Training Epochs):
+
+6.  Meskipun terjadi peningkatan kinerja pada beberapa epoch awal, ada kemungkinan potensial untuk melanjutkan pelatihan untuk melihat apakah model dapat mencapai performa yang lebih baik atau untuk menangani overfitting.

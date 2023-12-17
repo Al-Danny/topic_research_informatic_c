@@ -1,0 +1,65 @@
+# Import library
+import tensorflow as tf
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
+import numpy as np
+import matplotlib.pyplot as plt
+from google.colab import drive
+
+# Mount Google Drive
+drive.mount('/content/drive')
+
+# Load Dataset
+train_dir = '/content/drive/MyDrive/Colab Notebooks/Dataset/padi/Train'
+test_dir = '/content/drive/MyDrive/Colab Notebooks/Dataset/padi/Test'
+
+# ImageDataGenerator untuk Augmentasi Data pada Dataset Latih
+train_datagen = ImageDataGenerator(
+    rescale=1./255,
+    shear_range=0.2,
+    zoom_range=0.2,
+    horizontal_flip=True)
+
+# ImageDataGenerator tanpa Augmentasi untuk Dataset Pengujian
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+# Menggunakan ImageDataGenerator untuk Memuat dan Augmentasi Data Latih
+train_generator = train_datagen.flow_from_directory(
+    train_dir,
+    target_size=(224, 224),
+    batch_size=32,
+    class_mode='categorical')
+
+# Menggunakan ImageDataGenerator untuk Memuat Data Pengujian (tanpa Augmentasi)
+test_generator = test_datagen.flow_from_directory(
+    test_dir,
+    target_size=(224, 224),
+    batch_size=32,
+    class_mode='categorical')
+
+# Membangun Model CNN
+model = tf.keras.Sequential([
+    tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(224, 224, 3)),
+    tf.keras.layers.MaxPooling2D(2, 2),
+    tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
+    tf.keras.layers.MaxPooling2D(2, 2),
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(9, activation='softmax')  # Sesuaikan dengan jumlah kelas dataset Anda
+])
+
+# Compile Model
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# Melatih Model
+history = model.fit(
+    train_generator,
+    epochs=10,
+    validation_data=test_generator  # Menambahkan data pengujian untuk evaluasi
+)
+
+# Evaluasi Model pada Dataset Pengujian
+test_loss, test_accuracy = model.evaluate(test_generator)
+
+# Tampilkan hasil evaluasi
+print(f'Test Accuracy: {test_accuracy}')
+print(f'Test Loss: {test_loss}')

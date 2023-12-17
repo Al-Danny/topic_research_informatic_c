@@ -1,0 +1,23 @@
+Menentukan Topik Penelitian
+
+Topik      : Convolutional Neural Networks (CNN) and TensorFlow
+Judul      : PadiGuard: Pengenalan Penyakit pada Tanaman Padi dengan Convolutional Neural Networks (CNN) menggunakan TensorFlow
+Referensi  : https://www.sciencedirect.com/science/article/pii/S2589721723000284
+
+Resume     :
+Dalam projek ini memperkenalkan PadiGuard, sebuah sistem Convolutional Neural Network (CNN) berbasis TensorFlow yang dirancang untuk mengidentifikasi penyakit pada tanaman padi. Fokus penelitian mencakup implementasi CNN dengan teknik augmentasi gambar untuk meningkatkan keberagaman dataset pelatihan. Model CNN terdiri dari lapisan-lapisan konvolusi dan max pooling, dengan tujuan mengklasifikasikan penyakit pada tanaman padi.
+  
+Berdasarkan pernyataan di atas, dapat dirumuskan sejumlah persoalan praktis sebagai berikut:
+1.  Peningkatan kinerja model pada PadiGuard dapat dicapai melalui variasi teknik augmentasi gambar.
+2.  keandalan pengenalan karakter dan kata pada citra penyakit tanaman padi sehingga model dapat memberikan hasil klasifikasi yang lebih akurat.
+3.  keamanan dan privasi data dalam konteks PadiGuard, yang menggunakan teknologi CNN untuk mengolah gambar penyakit tanaman padi.
+
+Berdasarkan persoalan praktis di atas, dapat dirumuskan beberapa research questions sebagai berikut:
+1.  Bagaimana Teknik Augmentasi Gambar Mempengaruhi Kinerja Model PadiGuard dalam Mengidentifikasi Penyakit pada Tanaman Padi?
+2.  Sejauh Mana Keandalan Pengenalan Karakter dan Kata Dapat Ditingkatkan dalam Model PadiGuard untuk Menghasilkan Klasifikasi yang Lebih Akurat pada Citra Penyakit Tanaman Padi?
+3.  Apa Saja Isu-isu Etika yang Perlu Diperhatikan dan Dikelola dalam Penggunaan Teknologi PadiGuard untuk Keamanan dan Privasi Data dalam Pengolahan Citra Tanaman Padi?
+
+Berdasarkan rumusan masalah di atas, dapat dirumuskan tujuan penelitian ini sebagai berikut:
+1.  Meningkatkan performa sistem PadiGuard dengan mengevaluasi dan mengimplementasikan teknik augmentasi gambar, khususnya dalam pengenalan penyakit pada tanaman padi.
+2.  Meningkatkan akurasi pengenalan karakter dan kata pada model PadiGuard, sehingga dapat memberikan klasifikasi yang lebih tepat terhadap citra penyakit pada tanaman padi.
+3.  Mengoptimalkan efisiensi algoritma pada PadiGuard untuk menangani dengan efisien proses pengarsipan data pada skala besar dalam konteks pertanian.

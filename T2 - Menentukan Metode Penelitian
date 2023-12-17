@@ -1,0 +1,17 @@
+Menentukan Metode Penelitian
+
+Topik      : Convolutional Neural Networks (CNN) and TensorFlow
+Judul      : PadiGuard: Pengenalan Penyakit pada Tanaman Padi dengan Convolutional Neural Networks (CNN) menggunakan TensorFlow
+Referensi  : https://www.sciencedirect.com/science/article/pii/S2589721723000284
+
+Metode Penelitian yang Digunakan terdiri atas Metode Kuantitatif & Kualitatif.
+
+1. Metode Kuantitatif
+    -  Pengumpulan data dilakukan dengan menggunakan teknik augmentasi gambar pada dataset awal untuk meningkatkan keragaman citra.
+    -  Pengumpulan data dilakukan melalui penilaian keakuratan pengenalan karakter dan kata pada citra penyakit tanaman padi.
+    -  Citra penyakit tanaman padi dari sumber data yang mencakup variasi jenis penyakit dan kondisi pertanian.
+
+2. Metode Kualitatif
+    -  Pendekatan kualitatif dengan studi kasus, memungkinkan pemahaman mendalam terhadap pengalaman dan persepsi peserta terhadap implementasi PadiGuard.
+    -  Menganalisis data kualitatif menggunakan pendekatan analisis tematik untuk mengidentifikasi pola tematik yang muncul dari wawancara dan observasi.
+    -  Melibatkan refleksi peneliti dan peer review untuk meningkatkan keandalan dan validitas temuan.

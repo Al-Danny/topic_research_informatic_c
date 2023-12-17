@@ -1,0 +1,14 @@
+Menentukan Dataset Penelitian
+
+Topik      : Convolutional Neural Networks (CNN) and TensorFlow
+Judul      : PadiGuard: Pengenalan Penyakit pada Tanaman Padi dengan Convolutional Neural Networks (CNN) menggunakan TensorFlow
+Referensi  : https://www.sciencedirect.com/science/article/pii/S2589721723000284
+
+Gambar penyakit tanaman padi
+link dataset kaggle : https://www.kaggle.com/datasets/zaiemmustaqiem/padi-penyakit1
+link dataset gdrive : https://drive.google.com/drive/folders/16LUBn_o8QINWGQTRhvGTp2vODwRpV4Lu?usp=drive_link
+- Untuk melakukan eksperimen terkait implementasi teknologi Convolutional Neural Networks (CNN) and TensorFlow dalam proses penentuan jenis penyakit padi, digunakan Dataset "padi penyakit1" yang diambil dari kaggle.com
+- dataset berisi 1496 gambar dengan 9 fitur jenis klasifikasi
+- Adapun Penamaan gambar memiliki ketentuan sebagai berikut.
+  o jenis penyakit_kode uniq
+        contoh = Stemborer1_0ce88994-15a2-4904-92b0-a0da62df367e
